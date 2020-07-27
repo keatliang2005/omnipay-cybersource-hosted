@@ -32,10 +32,10 @@
         "psr-4": { "Omnipay\\CyberSource\\" : "tests/" }
     },
     "require": {
-        "omnipay/common": "~2.0"
+        "league/omnipay": "~3.0"
     },
     "require-dev": {
-        "omnipay/tests": "~2.0"
+        "league/tests": "~3.0"
     },
     "extra": {
         "branch-alias": {
