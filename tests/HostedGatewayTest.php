@@ -14,7 +14,7 @@ class HostedGatewayTest extends GatewayTestCase
     {
         parent::setUp();
 
-        $this->gateway = new HostedGateway($this->getHttpClient(), $this->getHttpRequest());
+        $this->gateway = new Gateway($this->getHttpClient(), $this->getHttpRequest());
 
         $this->options = array(
             'amount' => '1.450',

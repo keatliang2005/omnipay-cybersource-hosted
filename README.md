@@ -19,10 +19,18 @@ support for the Secure Acceptance Hosted Checkout (formerly Web/Mobile) version 
 Omnipay is installed via [Composer](http://getcomposer.org/). To install, simply add it
 to your `composer.json` file:
 
+This is keatliang v3 Fix Edition, still respect to original creater.
+
 ```json
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/keatliang2005/omnipay-cybersource-hosted.git"
+        }
+    ],
     "require": {
-        "PatronBase/omnipay-cybersource-hosted": "~2.0"
+        "PatronBase/omnipay-cybersource-hosted": "dev-master"
     }
 }
 ```

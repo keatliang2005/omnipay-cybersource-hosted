@@ -13,9 +13,9 @@ class Security
     /**
      * Create signature hash used to verify messages
      *
-     * @param mixed[]  $data    Full set of data
-     * @param string[] $fields  Array of keys to filter
-     * @param string   $key     The key used to encrypt the data
+     * @param mixed[] $data Full set of data
+     * @param string[] $fields Array of keys to filter
+     * @param string $key The key used to encrypt the data
      *
      * @return string  Generated signature
      */
@@ -23,7 +23,7 @@ class Security
     {
         $signable = array();
         foreach ($fields as $field) {
-            $signable[] = $field.'='.$data[$field];
+            $signable[] = $field . '=' . $data[$field];
         }
         $message = implode(',', $signable);
         return base64_encode(hash_hmac('sha256', $message, $key, true));
